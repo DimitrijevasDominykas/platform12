@@ -1,0 +1,100 @@
+section.content-projects{
+   position: relative;
+    .container{
+        width:90%;
+        h2{
+            margin-left:20px;
+             font-size:35px;
+        font-family: 'Myriad Pro', 'Regular'; 
+            color:#22a7f0;
+            font-weight: 400;
+            @include mobile{
+                margin-left:0;
+            }
+        }
+        .h-line{
+            margin:0;
+            position: absolute;
+            top:45px;
+            
+            
+        }
+      
+    }
+    nav ul{
+        float:right;
+        display: flex;
+        @include mobile{
+           float:none;
+            font-size:14px;
+        }
+    }
+    li{
+        margin-top:28px;
+        padding:10px 20px 5px 5px;
+   
+       
+    }
+    li:hover{
+       text-decoration: underline;
+     text-decoration-color:#22a7f0;
+     
+      
+       
+      
+        
+       
+    }
+    li:after:hover{
+         text-decoration:none !important;
+       border-bottom:none;
+       
+         text-decoration: none;
+        display: block;
+        
+    }
+    li:after{
+        content:'/';
+        margin-left:30px;
+        float:right;
+        @include mobile{
+            float:none;
+            margin-left:3px;
+        }
+      
+       
+    }
+   
+    li:last-child:after {
+        content: ""; 
+      
+    }
+    li:last-child{
+        @include mobile{
+            margin-right:5px;
+        }
+    }
+    .clearfix{
+        content:'';
+        display: table;
+        clear: both;
+        
+    }
+    .posts-projects{
+        .container{
+            margin-top:45px;
+            margin-bottom: 40px;
+            @include tablet-portrait{
+                text-align: center;
+            }
+            @include tablet-landscape{
+               text-align: center;
+            }
+        }
+        img{
+           margin:15px;
+            width:30%;
+            
+        }
+    }
+}

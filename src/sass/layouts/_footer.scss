@@ -1,0 +1,162 @@
+footer {
+    margin-top:120px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:120px;
+        @include tablet-portrait{
+            
+        }
+        @include mobile{
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+    }
+   
+    .info {
+       
+        width:100%;
+        height:120px;
+        background:$color-blue;
+    }
+    h5 {
+        color:$color-white;
+        font-size:24px;
+        font-weight: 600;
+        line-height: 1.4;
+       
+        @include tablet-portrait{
+            font-size:18px;
+        }
+         @include mobile{
+            font-size:10px;
+             margin:auto;
+        }
+        
+        
+    }
+    .btn {
+        @include tablet-landscape{
+            margin-right:30px;
+        }
+        @include mobile{
+            font-size: 10px;
+            margin:auto;
+    width: 70px;
+    height: 35px;
+    line-height: 40px;
+        }
+    @include button($color-white);
+    }
+    
+    .footer-menu{
+        padding:50px 0;
+        background:#161616;
+        @include mobile{
+            padding:0;
+        }
+       
+       
+    }
+    .wrapper-side {
+        width:30%;
+        @include tablet-portrait{
+            width:60%;
+            padding:15px 0;
+        }
+        @include mobile{
+            width:60%;
+           
+             
+        }
+        .fa {
+            width:20px;
+            color:$color-blue;
+        }
+    }
+    .wrapper-center {
+       
+        @include tablet-portrait{
+            width:40%;
+             padding:15px 0;
+        }
+        @include mobile{
+       width:40%;
+             padding:15px 0;
+        }
+         li {
+        text-transform: capitalize;
+       
+        &:before {
+            content:'\f054';
+            font-family: FontAwesome;
+            color:$color-blue;
+            margin-right:3px;
+        }
+    }
+    }
+    .order{
+        @include tablet-portrait{
+            order:2;
+        }
+        @include mobile{
+            order:0;
+        }
+    }
+    h3 {
+        font-size: 20px;
+        color:$color-blue;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include tablet-landscape{
+            font-size:16px;
+        }
+        @include mobile{
+            text-align: left;
+            font-size:10px;
+           
+        }
+        @include tablet-portrait{
+            text-align: left;
+        }
+    }
+    p,li,a {
+        @include text;
+        color:$color-white;
+        @include tablet-landscape{
+            font-size:14px;
+        }
+        @include mobile{
+            font-size:9px;
+            line-height: 14px;
+        }
+    }
+    @include mobile{
+        p{
+            font-size:9px;
+            width:150px;
+           
+        }
+    }
+    
+    .copy-right {
+        text-align: center;
+        background:$color-black;
+        h4{
+           
+            color:$color-white;
+        line-height: 80px;
+        font-size:13px;
+            @include mobile{
+                font-size:11px;
+            }
+        }
+    }
+}
+
+    
+        
+    
+   
